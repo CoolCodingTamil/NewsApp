@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEWS API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/wordle.css" />
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css" !important />
+    <script type="module" src="js/wordle.js" defer></script>
+    <script src="js/country_code.js"></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar__container">
+          <div class="navbar__title-container">
+            <h3 class="navbar__title">NEWS API</h3>
+          </div>
+          <div class="navbar__search-container">
+            <form class="navbar__search">
+              <div class="navbar__search-input">
+                <input
+                  type="text"
+                  placeholder="Search for topics, location & sources"
+                  autocomplete="off"                  
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="content__container">
+      <article class="article">
+        <div class="headline__container">
+          <h2 class="headline-text">General Headlines:</h2>
+        </div>
+        <div class="corona__container">
+          <div>
+            <span><a href="./covid-19.html">COVID-19 News: </a></span>
+            <span>See the latest coverage of corona virus.</span>
+          </div>
+          <div style="color: #bdc1c6">
+            <a href="./covid-19.html">
+              <svg
+                width="24"
+                fill="#bdc1c6"
+                height="24"
+                viewBox="0 0 24 24"
+                focusable="false"
+                class="right-indicator"
+              >
+                <path
+                  d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z"
+                ></path>
+              </svg>              
+            </a>
+          </div>
+        </div>
+        <div class="article__container">
+            <div class="article__content">
+                <div class="article__grid">
+                    <div class="article__title">
+                        <h3><a href="https://thehillstimes.in/sports/head-coach-rahul-dravid-joins-indias-test-team-in-england-r-ashwin-set-to-reach-soon" target="_blank">Head Coach Rahul Dravid Joins India’s Test Team In England, R Ashwin Set To Reach Soon</a></h3>
+                    </div>
+                    <div class="article__description">
+                        <p>London, June 21 (IANS):&nbsp;India head coach Rahul Dravid on Tuesday joined India’s Test team in Leicestershire ahead of the much-anticipated rescheduled 5th Test against England, scheduled to be held in Birmingham from July 1 to 5. Dravid along with Rishabh Pant…</p>
+                    </div>
+                    <div class="article__source">
+                        <span>Source: Thehillstimes.in</span>
+                    </div>
+                </div>
+                <div class="article__grid-2">
+                    <div class="article__image">
+                        <img src="https://thehillstimes.in/wp-content/uploads/2022/06/Head-coach-Dravid-joins-Indias-Test-team-in-England-Ashwin-set-to-reach-soon.jpg" id="myImg" alt="Head Coach Rahul Dravid Joins India’s Test Team In England, R Ashwin Set To Reach Soon">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </article>
+      <aside class="aside">
+        <div class="weather__widget">
+          <div class="weather__location">
+            <h3>Chennai</h3>
+          </div>
+          <div class="secondary__weather-widget">
+            <div class="weather__info">
+              <div class="weather__description">
+                <h3>Thunderstorms</h3>
+              </div>
+              <div class="weather__temperature">
+                <h3>30*c</h3>
+              </div>
+            </div>
+            <div class="weather__image">
+              <img src="images/cloud.svg" alt="cloud image" />
+            </div>
+          </div>
+        </div>
+        <div class="categories">
+          <div class="category__widget">
+            <div class="category__title">
+              <h3>Categories</h3>
+            </div>
+            <div class="category__lists"></div>
+          </div>
+        </div>
+        <div class="countries">
+          <div class="country__widget">
+            <div class="country__title">
+              <h3>Countries</h3>
+            </div>
+            <div class="country__lists"></div>
+          </div>
+        </div>
+        <section class="game">
+            <div class="game__title">
+              <h2>WORDLE</h2>
+            </div>
+            <div id="guess1" class="guess" data-letters="">
+              <div class="guess__tile" id="guess1Tile1"></div>
+              <div class="guess__tile" id="guess1Tile2"></div>
+              <div class="guess__tile" id="guess1Tile3"></div>
+              <div class="guess__tile" id="guess1Tile4"></div>
+              <div class="guess__tile" id="guess1Tile5"></div>
+            </div>
+            <div id="guess2" class="guess" data-letters="">
+              <div class="guess__tile" id="guess2Tile1"></div>
+              <div class="guess__tile" id="guess2Tile2"></div>
+              <div class="guess__tile" id="guess2Tile3"></div>
+              <div class="guess__tile" id="guess2Tile4"></div>
+              <div class="guess__tile" id="guess2Tile5"></div>
+            </div>
+            <div id="guess3" class="guess" data-letters="">
+              <div class="guess__tile" id="guess3Tile1"></div>
+              <div class="guess__tile" id="guess3Tile2"></div>
+              <div class="guess__tile" id="guess3Tile3"></div>
+              <div class="guess__tile" id="guess3Tile4"></div>
+              <div class="guess__tile" id="guess3Tile5"></div>
+            </div>
+            <div id="guess4" class="guess" data-letters="">
+              <div class="guess__tile" id="guess4Tile1"></div>
+              <div class="guess__tile" id="guess4Tile2"></div>
+              <div class="guess__tile" id="guess4Tile3"></div>
+              <div class="guess__tile" id="guess4Tile4"></div>
+              <div class="guess__tile" id="guess4Tile5"></div>
+            </div>
+            <div id="guess5" class="guess" data-letters="">
+              <div class="guess__tile" id="guess5Tile1"></div>
+              <div class="guess__tile" id="guess5Tile2"></div>
+              <div class="guess__tile" id="guess5Tile3"></div>
+              <div class="guess__tile" id="guess5Tile4"></div>
+              <div class="guess__tile" id="guess5Tile5"></div>
+            </div>
+            <div id="guess6" class="guess" data-letters="">
+              <div class="guess__tile" id="guess6Tile1"></div>
+              <div class="guess__tile" id="guess6Tile2"></div>
+              <div class="guess__tile" id="guess6Tile3"></div>
+              <div class="guess__tile" id="guess6Tile4"></div>
+              <div class="guess__tile" id="guess6Tile5"></div>
+            </div>
+          </section>
+      </aside>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img
+        id="modal-img"
+        class="modal-content"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS2ol73JZj6-IqypxPZXYS3rRiPwKteoD8vezk9QsRdkjt3jEn&usqp=CAU"
+      />
+
+      <div id="caption"></div>
+    </div>
+    <script src="js/weather.js"></script>
+    <!-- <script src="js/fixes.js"></script> -->
+  </body>
+</html>
